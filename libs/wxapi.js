@@ -4,9 +4,9 @@ const fs = require('fs');
 
 if (!process.env.WEIXIN_APPID) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_APPID');
 if (!process.env.WEIXIN_SECRET) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_SECRET');
-if (!process.env.WEIXIN_MCHID) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_MCHID');
-if (!process.env.WEIXIN_PAY_SECRET) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_PAY_SECRET');
-if (!process.env.WEIXIN_NOTIFY_URL) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_NOTIFY_URL');
+// if (!process.env.WEIXIN_MCHID) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_MCHID');
+// if (!process.env.WEIXIN_PAY_SECRET) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_PAY_SECRET');
+// if (!process.env.WEIXIN_NOTIFY_URL) throw new Error('请到【云引擎-设置-自定义环境变量】添加 WEIXIN_NOTIFY_URL');
 
 const wxpay = WXPay({
     appid: process.env.WEIXIN_APPID,
